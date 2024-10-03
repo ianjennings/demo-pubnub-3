@@ -1,0 +1,20 @@
+version: 4.0.56
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Navigate to the homepage.
+    commands:
+      - command: press-keys
+        keys:
+          - alt
+          - home
+  - prompt: Assert that the webpage loads successfully.
+    commands:
+      - command: assert
+        expect: the Google logo is visible
+  - prompt: Assert that the logo is displayed on the homepage.
+    commands:
+      - command: assert
+        expect: the Google logo is visible
