@@ -1,0 +1,40 @@
+version: 4.0.56
+steps:
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Scroll to the footer section. 4. /explore Click each footer link.
+      5. /explore Assert that each link directs to the correct page.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Scroll to the footer section. 4. /explore Click each footer link.
+      5. /explore Assert that each link directs to the correct page.
+    commands:
+      - command: hover-text
+        text: PubNub
+        description: homepage link in the header
+        action: click
+      - command: scroll-until-text
+        text: Privacy Policy
+        direction: down
+      - command: hover-text
+        text: Privacy Policy
+        description: footer link
+        action: click
+      - command: assert
+        expect: the page title is "Privacy Policy"
+      - command: press-keys
+        keys:
+          - alt
+          - left
+      - command: scroll-until-text
+        text: Terms of Service
+        direction: down
+      - command: hover-text
+        text: Terms of Service
+        description: footer link
+        action: click
+      - command: assert
+        expect: the page title is "Terms of Service"
