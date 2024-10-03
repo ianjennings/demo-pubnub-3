@@ -1,0 +1,54 @@
+version: 4.0.56
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Navigate to the homepage.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Scroll to the footer section.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Scroll to the footer section.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: scroll-until-text
+        text: Copyright 2024
+        direction: down
+  - prompt: Scroll to the footer section.
+    commands:
+      - command: scroll-until-text
+        text: Copyright 2024
+        direction: down
+  - prompt: Scroll to the footer section.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll to the footer section.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll to the footer section.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll to the footer section.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll to the footer section.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll to the footer section.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll to the footer section.
+    commands:
+      - command: scroll
+        direction: down
