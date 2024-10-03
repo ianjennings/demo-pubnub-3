@@ -1,0 +1,27 @@
+version: 4.0.56
+steps:
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Locate the search bar and click it. 4. /explore Type a query into
+      the search bar. 5. /explore Press enter. 6. /explore Assert that search
+      results load correctly.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Locate the search bar and click it. 4. /explore Type a query into
+      the search bar. 5. /explore Press enter. 6. /explore Assert that search
+      results load correctly.
+    commands:
+      - command: hover-text
+        text: Search
+        description: search bar on the homepage
+        action: click
+      - command: type
+        text: real-time developer platform
+      - command: press-keys
+        keys:
+          - enter
+      - command: assert
+        expect: search results are displayed
