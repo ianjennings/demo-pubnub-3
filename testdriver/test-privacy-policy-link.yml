@@ -1,0 +1,27 @@
+version: 4.0.56
+steps:
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Scroll to the footer area. 4. /explore Click the "Privacy Policy"
+      link. 5. /explore Assert that the privacy policy page loads successfully.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Scroll to the footer area. 4. /explore Click the "Privacy Policy"
+      link. 5. /explore Assert that the privacy policy page loads successfully.
+    commands:
+      - command: hover-text
+        text: PubNub
+        description: homepage link in the header
+        action: click
+      - command: scroll-until-text
+        text: Privacy Policy
+        direction: down
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+      - command: assert
+        expect: the privacy policy page loads successfully
