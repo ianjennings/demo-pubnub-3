@@ -1,0 +1,66 @@
+version: 4.0.56
+steps:
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Hover over each navigation menu item. 4. /explore Assert that
+      each submenu or dropdown appears correctly. 5. /explore Click one of the
+      submenu items. 6. /explore Assert that the correct page loads.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Hover over each navigation menu item. 4. /explore Assert that
+      each submenu or dropdown appears correctly. 5. /explore Click one of the
+      submenu items. 6. /explore Assert that the correct page loads.
+    commands:
+      - command: hover-text
+        text: Products
+        description: navigation menu item
+        action: hover
+      - command: hover-text
+        text: Solutions
+        description: navigation menu item
+        action: hover
+      - command: hover-text
+        text: Pricing
+        description: navigation menu item
+        action: hover
+      - command: hover-text
+        text: Developers
+        description: navigation menu item
+        action: hover
+      - command: hover-text
+        text: Resources
+        description: navigation menu item
+        action: hover
+      - command: hover-text
+        text: Developers
+        description: navigation menu item
+        action: click
+      - command: assert
+        expect: the developers page loads correctly
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Hover over each navigation menu item. 4. /explore Assert that
+      each submenu or dropdown appears correctly. 5. /explore Click one of the
+      submenu items. 6. /explore Assert that the correct page loads.
+    commands:
+      - command: hover-text
+        text: Products
+        description: navigation menu item
+        action: hover
+      - command: assert
+        expect: the products submenu appears
+      - command: hover-text
+        text: Solutions
+        description: navigation menu item
+        action: hover
+      - command: assert
+        expect: the solutions submenu appears
+      - command: hover-text
+        text: Pricing
+        description: navigation menu item
+        action: hover
+      - command: assert
+        expect: the pricing submenu appears
