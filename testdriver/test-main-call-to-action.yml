@@ -1,0 +1,58 @@
+version: 4.0.56
+steps:
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Identify the main call-to-action button. 4. /explore Click the
+      main call-to-action button. 5. /explore Assert that the user is directed
+      to the correct page or section.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Identify the main call-to-action button. 4. /explore Click the
+      main call-to-action button. 5. /explore Assert that the user is directed
+      to the correct page or section.
+    commands:
+      - command: hover-text
+        text: Start Building
+        description: main call-to-action button
+        action: click
+      - command: assert
+        expect: the user is directed to the correct page or section
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Identify the main call-to-action button. 4. /explore Click the
+      main call-to-action button. 5. /explore Assert that the user is directed
+      to the correct page or section.
+    commands:
+      - command: hover-text
+        text: Register
+        description: main call-to-action button
+        action: click
+      - command: assert
+        expect: the user is directed to the correct page or section
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Identify the main call-to-action button. 4. /explore Click the
+      main call-to-action button. 5. /explore Assert that the user is directed
+      to the correct page or section.
+    commands:
+      - command: hover-text
+        text: Register
+        description: main call-to-action button
+        action: click
+      - command: assert
+        expect: the user is directed to the correct page or section
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Identify the main call-to-action button. 4. /explore Click the
+      main call-to-action button. 5. /explore Assert that the user is directed
+      to the correct page or section.
+    commands:
+      - command: hover-text
+        text: Register
+        description: main call-to-action button
+        action: click
+      - command: assert
+        expect: the user is directed to the registration page
