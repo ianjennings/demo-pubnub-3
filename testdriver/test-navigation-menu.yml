@@ -1,0 +1,30 @@
+version: 4.0.56
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Navigate to the homepage.
+    commands:
+      - command: press-keys
+        keys:
+          - alt
+          - home
+  - prompt: Hover over each navigation menu item.
+    commands:
+      - command: hover-text
+        text: Gmail
+        description: Gmail link in the navigation menu
+        action: hover
+      - command: hover-text
+        text: Images
+        description: Images link in the navigation menu
+        action: hover
+  - prompt: Assert that each submenu or dropdown appears correctly.
+    commands:
+      - command: hover-text
+        text: Gmail
+        description: Gmail link in the navigation menu
+        action: hover
+      - command: assert
+        expect: Gmail dropdown is visible
