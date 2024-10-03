@@ -1,0 +1,22 @@
+version: 4.0.56
+steps:
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Assert that the webpage loads successfully. 4. /explore Assert
+      that the logo is displayed on the homepage.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: >-
+      Focus the browser window. 2. /explore Navigate to the homepage. 3.
+      /explore Assert that the webpage loads successfully. 4. /explore Assert
+      that the logo is displayed on the homepage.
+    commands:
+      - command: assert
+        expect: the webpage loads successfully
+      - command: hover-text
+        text: PubNub
+        description: logo on the homepage
+        action: hover
+      - command: assert
+        expect: the logo is displayed on the homepage
